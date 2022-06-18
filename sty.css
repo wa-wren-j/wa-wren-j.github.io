@@ -1,6 +1,4 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     margin: 0;
     margin-left: -20px;
     padding: 0;
@@ -127,6 +125,8 @@ header {
 }
 
 .button {
+    width: 10vw;
+    font-size: 80%;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -313,7 +313,7 @@ textarea {
 
 .aboutME {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .aboutME p {
@@ -322,6 +322,7 @@ textarea {
 
 .warren {
     width: 90%;
+    margin-top: 15%;
 }
 
 /* ABOUT ENDS HERE */
