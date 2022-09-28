@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora's Paradox</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    </style>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<script>
+    //    https://www.w3schools.com/howto/howto_js_slideshow.asp
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    //end
+
+</script>
+
+<div class='everything'>
+
+    <nav id="siteNav">
+        <ul>
+            <li><a href="index.html">HOME & WORK</a></li>
+            <li><a href="about.html">CONTACT & ABOUT</a></li>
+            <li><a href="assets/resume'22.1.pdf">RESUME</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class='nam'>
+            <h1>Warren Scobie</h1>
+        </div>
+    </header>
+
+    <div class='content_wrap'>
+        <div class="text" id="text_no_bot">
+
+            <div class="banner" id="pandora">
+                <div class="textBG">
+                    <h1>Pandora's Paradox</h1>
+                    <h4>
+                        An interactive choose-your-own-adventure story/game
+                    </h4>
+                </div>
+                <br>
+                <div class="overview">
+                    <div class="textBG" id="what">
+                        <h2>The Problem</h2>
+                        <br>
+                        <p>Design an engaging narrative based on a myth or legend, with at least six artifacts (images, physical pieces, etc) </p>
+                    </div>
+
+                    <div class="textBG" id="what">
+                        <h2>Target Users</h2>
+                        <br>
+                        <p>Users between 14 and 60 interested in choose-your-own-adventure games</p>
+                    </div>
+
+                    <div class="textBG" id="what">
+                        <h2>Time Frame</h2>
+                        <br>
+                        <p>About 4 weeks, in a 3-person team setting</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="display">
+                <br>
+
+                <h3>Define</h3>
+                <p>
+                    First of all, we need to define an artifact for the purpose of this project. An artifact was something connected to the story, such as if we included an image or made something physical like a pamphlet. Our artifacts were a mixture of both digital and physical, and you can see them in the gallery <a href="#artifacts">here.</a>
+                    <br><br>
+                    This project was a team effort, and to start we needed to pick a myth to base our engaging narrative from. We took a long time to come to an agreement on where we wanted to take the story. We'd almost immediately decided on the myth of Pandora, but had too many ideas on what to do with the myth. It was difficult for us to settle with just one.
+                    <br><br>
+                    Eventually, we agreed on time travel, and the theme of inevitablility. We specifically wanted to make a story with the message that some things are just inevitable, no matter what you do to try and change it. Once that was established, we immediately jumped into crafting our narrative, which was a mistake on our part because it was far too early for that; we were thinking about characters and plot points and possible good and bad endings instead of how we should proceed and get the idea off the ground.
+                </p>
+                <br>
+
+                <h3>Ideate</h3>
+                <p>
+                    Our final chosen themes were the Danger or Consequences of Knowledge, the Danger of Curiousity, Some Evils are Inevitable and Focusing on the Present Instead of the Past.
+                    <br><br>
+                    We agreed that our story would only have one ending, and that it wouldn't be a happy one. Sometimes the world is just like that, unfortunately.
+                    <br><br>
+                    We wanted the final project to be a game. The player would be a time traveller recruited by a government agency, who would travel back in time in an effort to stop WWIII by infiltrating a top secret government base. During the mission, the traveller accidentally triggers an alarm and sends the base into high alert. In the chaos, a missile gets launched that ends up starting the war.
+                    <br><br>
+                    Unfortunately for the player - no matter how many times they play, or how many different choices they make - it's their very interference itself that causes WWIII in the first place.
+                </p>
+                <br>
+
+                <h3>Prototype</h3>
+                <p id="artifacts">
+                    One of our challenges was to have 6 different artifacts, either physical or digital, but at least one had to be physical. We agonized over what to make an artifact and thought about player interaction and how well we could integrate certain things into our story.
+                    <br><br>
+                    We decided to have a scannable keycard, a map of the base, a recruitment poster from the government agency that the player works for, the story itself counted as a digital artifact, and two newspapers - one from before the player goes back in time and one from after, which had slight alterations.
+                    <br><br>
+                    Flip through the gallery below to see the artifacts.
+                </p>
+                <br>
+                <!--                    https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+                <div class="slideshow" id="pandoraSLIDE">
+                    <div class="slides" id="first">
+                        <img src="assets/ppdox/twine.PNG" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/ppdox/poster.jpg" style="width:50%; margin-left:25%">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/ppdox/newspaper2C.jpg" style="width:50%; margin-left:25%">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/ppdox/newspaper1_1.jpg" style="width:50%; margin-left:25%">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/ppdox/map_base.jpg" style="width:100%; margin-left:0%">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/ppdox/keycard4.jpg" style="width:50%; margin-left:25%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="slideshow" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <!--                    end-->
+                <br>
+                <p>The game was created in Twine, which means for the most part it's a black screen with text. We liked this look, we felt it emulated the old novels of the same genre we were used to. After each paragraph of story, the player is faced with a choice, sometimes two or three. There's a path the player can take to gather some information that will be useful later, but the game is still playable without it.
+                    <br><br>
+                    When the player reaches the control room, if they have a certain item, they're taken to the AR section, which involves them printing out the keycard and holding it in view of a webcam for scanning. This was done with AR.js and javascript/HTML.
+                </p>
+                <br>
+
+                <h3>Test</h3>
+                <p>
+                    Over the course of about three weeks, we launched our game and let players give us feedback, as well as colelcted some data through Google Analytics. We recieved multiple accounts of valuable feedback and changed a few things accordingly:
+                    <br><br>
+                    Players found the secret code at the beginning a bit too hard to figure out, so we made it a bit easier for them.
+                    <br><br>
+                    Players were skipping over the newspaper at the end because it didn't look different enough from the one at the beginning, so we added some prompts that highlighted that there was a change.
+                    <br><br>
+                    Some players were having trouble with using certain browsers, so we tried to fix any bugs best we could and for those we couldn't, added a 'recommeneded browser' note before the game starts.
+                </p>
+                <br>
+
+                <h3>The Final Piece</h3>
+                <p>
+                    Overall, we're very proud of our little game and how far it's come. We've put countless hours of hard work into it and the outcome is something we feel happy to share with others. We'll be able to carry the knowledge we've gained from working on this project with us into the future and apply it to other aspects of our careers, which is all we can hope for when doing big collaborative projects like this, especially if they don't work out. Learning never stops.
+                    <br><br>
+                    <a href="pandora/mischief.html">Click Here to Play</a>
+                </p>
+            </div>
+            <br>
+
+            <div class="footer">
+                <p>W. Scobie | 2022</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
