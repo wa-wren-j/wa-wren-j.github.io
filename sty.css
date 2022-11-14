@@ -365,3 +365,13 @@ strong {
     width: 100px;
     border-top: 3px solid #000;
 }
+
+@media only screen and (max-width: 500px) {
+    #siteNav {
+        font-size: 2.5vw;
+        padding: 6px;
+    }
+
+    #siteNav ul li a {
+        padding: 5px 10px;
+    }
