@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini AC Unit Infographic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    </style>
+    <link rel="stylesheet" href="sty.css?v=1.1">
+</head>
+
+<script>
+    //    https://www.w3schools.com/howto/howto_js_slideshow.asp
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    //end
+
+</script>
+
+<div class='everything'>
+
+    <nav id="siteNav">
+        <ul>
+            <li><a href="index.html">HOME & WORK</a></li>
+            <li><a href="about.html">CONTACT & ABOUT</a></li>
+            <li><a href="assets/resume'22.1.pdf">RESUME</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class='nam'>
+            <h1>Warren Scobie</h1>
+        </div>
+    </header>
+
+    <div class='content_wrap'>
+        <div class="text" id="text_no_bot">
+
+            <div class="banner" id="thecat">
+                <div class="textBG">
+                    <h1>Mini AC Unit Infographic</h1>
+                    <h4>
+                        An exploration in instructional graphic design
+                    </h4>
+                </div>
+                <br>
+                <div class="overview">
+                    <div class="textBG" id="what">
+                        <h2>The Problem</h2>
+                        <br>
+                        <p>Choose an object with at least 5 steps and make an infographic that describes how to operate it</p>
+                    </div>
+
+                    <div class="textBG" id="what">
+                        <h2>Target Users</h2>
+                        <br>
+                        <p>Consumers and product users, all ages</p>
+                    </div>
+
+                    <div class="textBG" id="what">
+                        <h2>Time Frame</h2>
+                        <br>
+                        <p>About 3 weeks</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="display">
+                <br>
+
+                <h3>The Object & Objective</h3>
+                <div id="pcol">
+                    <p id="pcol1">
+                        The object I thought I would have the most success with for this project was a little AC Unit I kept on my desk. It's only about one hand's length wide, long AND tall, and is relatively simple to operate. With the object selected, I could break down what I was going to be instructing. I chose using the diffuser option on the unit, and eventually broke it down into these 6 steps:
+                    </p>
+                    <div id="listdiv">
+                        <p id="pcol2">
+
+                        <ul id="catlist">
+                            <li>STEP 1: Prepare a solution of water and a few drops of Essential Oil of your choice, and pour into the bottle. </li> <br>
+                            <li>STEP 2: Open the lid of the AC unit using the tab and remove the diffuser tank stopper.</li> <br>
+                            <li>STEP 3: Pour contents of the bottle into the diffuser tank. Do not overfill.</li> <br>
+                            <li>STEP 4: Close diffuser tank stopper and AC unit lid, making sure it ‘clicks.’</li> <br>
+                            <li>STEP 5: Plug in and power up the AC unit.</li> <br>
+                            <li>STEP 6: Press the diffuser button.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <img src="assets/infogr/bottlewunit.jpg" id="unit">
+
+                    <p id="pcol1">
+                        Originally, I took a multiude of pictures of the unit from all angles and with all manner of hand poses doing various things (pressing buttons, opening lids, etc) on a neutral black background, but after a round of feedback and some crititical inspection on my part, I retook the photos on a lighter background so you could actually see what was going on. The black grill of the unit nearly always got lost on the black background.
+                    </p>
+
+                </div>
+
+
+                <br>
+
+                <h3>Layout</h3>
+                <p>
+                    I played with a lot of layout styles. I wanted the final layout to be something different than the 'norm' or 'expected' layout, but I also felt like I had a lot of information I needed to display and not a lot of space to display it.
+                </p>
+                <br>
+
+                <!--                    https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+                <div class="slideshow">
+                    <div class="slides" id="first">
+                        <img src="assets/infogr/sketch1.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch2.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch3.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch4.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch5.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch6.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/layout1.jpg" style="width:60%; margin-left: 20%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch7.jpg" style="width:50%; margin-left: 25%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/sketch8.jpg" style="width:50%; margin-left: 25%;">
+                    </div>
+                    <div class="slides">
+                        <img src="assets/infogr/layout2.jpg" style="width:50%; margin-left: 25%;">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="slideshow" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+                <!--                    end-->
+                <br>
+
+                <p>
+                    While some of these layouts looked nice, they didn't leave me a lot of room for what I needed to include, so I decided to go with a simple two column layout in the end.
+                </p>
+
+                <br>
+
+                <h3>Fonts & Colours</h3>
+                <p>
+                    This was the part that took the longest. Since the object is black and white, I wanted a colour scheme that made it a little less boring to look at, but that also wouldn't get lost or obscure any of my text. To test them, I made tiles with the unit, a font with colours from black to white, the font colour I chose, and different swatches of colour that would be used for the arrows to check contrast and visibility.
+                </p>
+            <br>
+
+                <div id="typeholder">
+                    <a href="assets/infogr/layout.png" target="_blank">
+                        <img src="assets/infogr/layout.png">
+                    </a>
+                </div>
+            <p>(Image opens in new tab)</p>
+            <br>
+            <p>
+            I had also decided that to spice it up a little and add some visual interest, the infographic would be done in the Art Deco style. I surfed around and found a ffew fonts that fitted the style, and comapred them on the side for legibility and contrast. 
+            </p>
+
+                <br>
+
+                <h3>The Final Piece</h3>
+                <p>
+                    With everything decided and all figured out, it was time to put it all together. Below is the final infographic (image opens in new tab).
+                </p>
+            <div id="finalholder">
+                    <a href="assets/infogr/final2.jpg" target="_blank">
+                        <img src="assets/infogr/final2.jpg">
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="footer">
+                <p>W. Scobie | 2022</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
