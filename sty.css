@@ -354,7 +354,6 @@ strong {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-
 }
 
 #col-1 {
@@ -377,7 +376,7 @@ strong {
 #col-2 img,
 #col-3 img,
 #col-4 img {
-    width: 50%;
+    width: 100%;
 }
 
 /* GALLERY ENDS HERE */
