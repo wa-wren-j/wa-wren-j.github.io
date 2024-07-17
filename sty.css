@@ -175,8 +175,9 @@ header {
     bottom: 0;
     background: rgb(36, 36, 36, 0.7);
     width: 100%;
-    transition: .5s ease;
+    transition: .2s ease;
     opacity: 0;
+    font-size: 1em;
     color: #fff;
     padding: 10px;
     text-align: center;
