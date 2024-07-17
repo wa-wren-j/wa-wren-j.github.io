@@ -363,18 +363,6 @@ strong {
     opacity: 1;
 }
 
-.column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 10px;
-}
-
-.column img {
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 100%;
-}
-
 @media only screen and (max-width: 800px) {
 .images-container {
     grid-template-columns: 1fr;
