@@ -337,10 +337,12 @@ strong {
 .images-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .img-wrap {
     position: relative;
+    width: 100%;
 }
 
 .gallimg {
@@ -349,15 +351,15 @@ strong {
 }
 
 .desc {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  opacity: 0;
-  transition: .2s ease;
-  background-color: rgba(36, 36, 36, 0.7);
-}
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: rgba(36, 36, 36, 0.7);
+} 
 
-.img-wrap .desc {
+.img-wrap:hover .desc {
     opacity: 1;
 }
 
