@@ -334,11 +334,7 @@ strong {
 
 /* PANDORA ENDS HERE */
 
-.gallery:hover {
-    border: 1px solid #000;
-}
-
-.image-container {
+.images-container {
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
