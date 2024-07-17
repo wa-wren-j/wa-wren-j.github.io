@@ -365,9 +365,8 @@ strong {
     width: 90%;
     opacity: 0;
     transition: .2s ease;
-    background-color: rgba(36, 36, 36, 0.7);
+    background-color: rgba(36, 36, 36, 0.8);
     color: #D8E9A8;
-    font-size: 1vw;
     padding: 10px;
     text-align: center;
 } 
