@@ -73,7 +73,6 @@ header {
 .content_wrap {
     background-color: #242424;
     color: #43B42C;
-    max-width: 100%;
 }
 
 .text {
@@ -339,6 +338,10 @@ strong {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+}
+
+img {
+    display: block;
 }
 
 #col-1 {
