@@ -352,7 +352,7 @@ strong {
 
 .images-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
@@ -364,18 +364,8 @@ strong {
     grid-column: 2;
 }
 
-#col-3 {
-    grid-column: 3;
-}
-
-#col-4 {
-    grid-column: 4;
-}
-
 #col-1 img,
-#col-2 img,
-#col-3 img,
-#col-4 img {
+#col-2 img {
     width: 100%;
 }
 
