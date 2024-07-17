@@ -73,6 +73,7 @@ header {
 .content_wrap {
     background-color: #242424;
     color: #43B42C;
+    max-width: 100%;
 }
 
 .text {
@@ -168,24 +169,6 @@ header {
 .image {
     display: block;
     width: 102%;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(36, 36, 36, 0.7);
-    width: 100%;
-    transition: .2s ease;
-    opacity: 0;
-    font-size: 1em;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    z-index: 1;
-}
-
-img:hover .overlay {
-    opacity: 1;
 }
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
@@ -356,6 +339,7 @@ strong {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    position: relative;
 }
 
 #col-1 {
@@ -369,6 +353,24 @@ strong {
 #col-1 img,
 #col-2 img {
     width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(36, 36, 36, 0.7);
+    width: 100%;
+    transition: .2s ease;
+    opacity: 0;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+img:hover .overlay {
+    opacity: 1;
 }
 
 /* GALLERY ENDS HERE */
