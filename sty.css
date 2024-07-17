@@ -182,7 +182,7 @@ header {
     text-align: center;
 }
 
-.container:hover .overlay {
+.assetgall:hover .overlay {
     opacity: 1;
 }
 
