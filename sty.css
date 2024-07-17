@@ -340,19 +340,17 @@ strong {
     grid-gap: 10px;
 }
 
-#col-1 {
-    grid-column: 1;
-}
-
-#col-2 {
-    grid-column: 2;
-}
-
-#col-1 img, #col-2 img {
-    width: 100%: 
+.images-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .img-wrap {
+    position: relative;
+}
+
+.img-wrap-2 {
     position: relative;
 }
 
@@ -360,6 +358,11 @@ strong {
     display: block;
     width: 100%:
 }
+
+.gallimg2 {
+    display: block;
+    width: 100%:
+} 
 
 .overlay {
     position: absolute;
