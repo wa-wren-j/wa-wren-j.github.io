@@ -335,9 +335,8 @@ strong {
 /* PANDORA ENDS HERE */
 
 .images-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .img-wrap {
