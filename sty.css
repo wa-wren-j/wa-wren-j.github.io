@@ -350,7 +350,7 @@ strong {
 
 /* PANDORA ENDS HERE */
 
-.images-old {
+.images-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -378,11 +378,6 @@ strong {
 #col-3 img,
 #col-4 img {
     width: 100%;
-}
-
-#col-11 img{
-    width: 50%;
-    margin: 5% 25%;
 }
 
 /* GALLERY ENDS HERE */
