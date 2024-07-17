@@ -349,7 +349,7 @@ strong {
     width: 100%;
 }
 
-.overlay {
+.desc {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -358,7 +358,7 @@ strong {
   background-color: rgba(36, 36, 36, 0.7);
 }
 
-.img-wrap .overlay {
+.img-wrap .desc {
     opacity: 1;
 }
 
