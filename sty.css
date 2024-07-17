@@ -374,9 +374,8 @@ strong {
 }
 
 @media only screen and (max-width: 800px) {
-    .column {
-        flex: 100%;
-       max-width: 100%;
+.images-container {
+    grid-template-columns: 1fr;
     }
 }
 
