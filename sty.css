@@ -340,6 +340,28 @@ strong {
     padding: 0 10px;
 }
 
+.img-wrap {
+    position: relative;
+}
+
+.gallimg {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: rgba(36, 36, 36, 0.7);
+}
+
+.img-wrap .overlay {
+    opacity: 1;
+}
+
 .column {
     flex: 50%;
     max-width: 50%;
