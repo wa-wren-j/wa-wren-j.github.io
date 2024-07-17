@@ -73,7 +73,7 @@ header {
 .content_wrap {
     background-color: #242424;
     color: #43B42C;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .text {
@@ -339,7 +339,6 @@ strong {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    position: relative;
 }
 
 #col-1 {
@@ -355,6 +354,14 @@ strong {
     width: 100%;
 }
 
+.assetgall {
+    position: realtive;
+}
+
+.assetgall:hover .overlay {
+    opacity: 1;
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -368,10 +375,6 @@ strong {
     padding: 10px;
     text-align: center;
     z-index: 1;
-}
-
-.assetgall:hover .overlay {
-    opacity: 1;
 }
 
 /* GALLERY ENDS HERE */
