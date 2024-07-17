@@ -340,29 +340,13 @@ strong {
     grid-gap: 10px;
 }
 
-img {
+.img-wrap {
+    position: relative;
+}
+
+.gallimg {
     display: block;
-}
-
-#col-1 {
-    grid-column: 1;
-}
-
-#col-2 {
-    grid-column: 2;
-}
-
-#col-1 img,
-#col-2 img {
-    width: 100%;
-}
-
-#col-1, #col-2 {
-    position: realtive;
-}
-
-.assetgall:hover .overlay {
-    opacity: 1;
+    width: 100%:
 }
 
 .overlay {
@@ -375,6 +359,10 @@ img {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.img-wrap:hover .overlay {
+    opacity: 1;
 }
 
 /* GALLERY ENDS HERE */
