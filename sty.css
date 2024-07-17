@@ -336,6 +336,7 @@ strong {
 
 .images-container {
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 1fr 1fr;
     width: 100%;
 }
@@ -371,6 +372,9 @@ strong {
 .images-container {
     grid-template-columns: 1fr;
     }
+
+    .desc {
+        font-size: 2em;
 }
 
 /* GALLERY ENDS HERE */
