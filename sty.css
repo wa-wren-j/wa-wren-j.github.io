@@ -380,6 +380,10 @@ strong {
     opacity: 1;
 }
 
+.img-wrap-2:hover .overlay {
+    opacity: 1;
+}
+
 /* GALLERY ENDS HERE */
 
 #pcol {
