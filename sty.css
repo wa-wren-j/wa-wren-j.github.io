@@ -291,7 +291,7 @@ header {
 }
 
 #gall {
-    background: url(assets/cards/dad.png) #7E230B no-repeat center top;
+    background: url(assets/cards/galleryBG.png) no-repeat center top;
         background-size: cover;
 }
 
@@ -385,7 +385,7 @@ strong {
     margin: 5% 25%;
 }
 
-/* DAD ENDS HERE */
+/* GALLERY ENDS HERE */
 
 #pcol {
     display: grid;
